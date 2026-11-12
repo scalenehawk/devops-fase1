@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de Tarefas DevOps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Lista de tarefas</h1>
+    <p>Organize suas atividades. Os dados ficam neste navegador.</p>
+    <form id="task-form">
+      <label for="task-title">Nova tarefa</label>
+      <div class="entry">
+        <input id="task-title" name="title" required maxlength="120" autocomplete="off" placeholder="Ex.: revisar pipeline de CI">
+        <button type="submit">Adicionar</button>
+      </div>
+    </form>
+    <p id="summary" aria-live="polite"></p>
+    <ul id="task-list" aria-label="Tarefas"></ul>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
